@@ -1,0 +1,25 @@
+{
+  "name": "n1-pentest-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --check src/v1/server.js && node --check src/v2/server.js",
+    "start": "node src/v2/server.js",
+    "v1": "node src/v1/server.js",
+    "v2": "node src/v2/server.js"
+  },
+  "author": "Rafael Dobner e André H. Voigt",
+  "license": "ISC",
+  "description": "N1 - Vulnerabilidades em Aplicacoes Web (SaaS): API V1 vulneravel e V2 segura",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "csrf": "^3.1.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.5"
+  }
+}

